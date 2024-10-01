@@ -2,27 +2,22 @@
 #include <stdio.h>
 int main()
 {
-    int A,B,C;
+    int A;
     A = 0;
-    B = 3;
-    C = 5;
     printf("inserisci il valore A: ");
     scanf("%d", &A);
-    if(A / B)
+    if(A % 3 == 0)
     {
-        printf("A: %d è divisibile per B %d", A,B);
+        if(A % 5 == 0){
+            printf("%d è divisibile sia per 3 che per 5",A);
+        }
+        else
+        {
+        printf("%d è divisibile per 3 ma non per 5",A);
+        } 
     }
-    else
-    {
-        printf("A: %d non è divisibile per B %d", A,B);
+    else{
+        printf("%d non è divisibile per 3",A);
     }
-    if(A / C)
-    {
-        printf("A: %d è divisibile per C %d", A,C);
-    }
-    else
-    { 
-        printf("A: %d non è divisibile per C %d", A,C);
-    }
-    return 0;
+    return 0;    
 }
