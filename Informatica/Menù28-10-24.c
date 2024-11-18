@@ -26,7 +26,7 @@ dell'utente di non fare niente e uscire dal programma:ES: "Seleziona l'operazion
             srand(time (NULL));
             num1=rand()%50+1;
             num2=rand()%50+1;
-            printf("%.2f %.2f", num1, num2);
+            printf("%.1f %.1f", num1, num2);
             switch (scelta)
             {
                 case 0:
@@ -46,7 +46,7 @@ dell'utente di non fare niente e uscire dal programma:ES: "Seleziona l'operazion
                     break;
                 default:
                     printf("\nhai inserito una scelta non valida: ");
-                    break;
+
             }
             return 0;
         }
